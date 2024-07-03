@@ -6,69 +6,101 @@
   :root {
     --radius: 12px;
 
+    /* general colors */    
+    --primary: 36 71% 53%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 212 75% 24%;
+    --secondary-foreground: 0 0% 100%;
+
+    --tertiary: 4 80% 60%;
+    --tertiary-foreground: 0 0% 0%;
+
     /* light theme colors */
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    /* ref https://www.radix-ui.com/colors/docs/palette-composition/scales for gray scale */
+    --gray1: 0 0% 99%; /* bgs __ 11, 12 text */
+    --gray2: 0 0% 98%; /* bgs __ 11, 12 text */
+    --gray3: 0 0% 94%; /* interactive components: input, select, etc __ 11 label, 12 text  */
+    --gray4: 0 0% 91%; /* interactive components: input, select, etc __ 11, 12 label, black text  */
+    --gray5: 0 0% 88%; /* interactive components: input, select, etc __ 12 label, black text  */
+    --gray6: 0 0% 85%; /* borders, separators __ 1-5 bgs */
+    --gray7: 0 0% 81%; /* borders, separators __ 1-5 bgs */
+    --gray8: 0 0% 73%; /* borders, focus rings, disabled text __ 1-5 bgs */
+    --gray9: 0 0% 55%; /* solid bg, disabled text __ white text */
+    --gray10: 0 0% 51%; /* solid bg, disabled text __ white text */
+    --gray11: 0 0% 39%; /* secondary text, links __ bg colors */
+    --gray12: 0 0% 13%; /* high-contrast text __ bg colors */
+    
+    --background: var(--gray1);
+    --foreground: var(--gray12);
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --muted: var(--gray2);
+    --muted-foreground: var(--gray11);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --card: var(--background);
+    --card-foreground: var(--foreground);
 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --popover: var(--background);
+    --popover-foreground: var(--foreground);
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --monochrome: 0 0% 0%;
+    --monochrome-foreground: 0 0% 100%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --accent: var(--gray6);
+    --accent-foreground: var(--foreground);
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --destructive: 358 69% 55%;
+    --destructive-foreground: 0 0% 0%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
+    --input: var(--gray3);
+    --border: var(--gray6);
+    --ring: var(--gray8);
   }
 
+  /* dark theme colors */
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --gray1: 0 0% 7%;
+    --gray2: 0 0% 10%;
+    --gray3: 0 0% 13%;
+    --gray4: 0 0% 16%;
+    --gray5: 0 0% 19%;
+    --gray6: 0 0% 23%;
+    --gray7: 0 0% 28%;
+    --gray8: 0 0% 38%;
+    --gray9: 0 0% 43%;
+    --gray10: 0 0% 48%;
+    --gray11: 0 0% 71%;
+    --gray12: 0 0% 93%;
+    
+    --background: var(--gray1);
+    --foreground: var(--gray12);
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --muted: var(--gray2);
+    --muted-foreground: var(--gray11);
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --card: var(--background);
+    --card-foreground: var(--foreground);
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --popover: var(--background);
+    --popover-foreground: var(--foreground);
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --monochrome: 0 0% 100%;
+    --monochrome-foreground: 0 0% 0%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --accent: var(--gray6);
+    --accent-foreground: var(--foreground);
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --destructive: 360 79% 65%;
+    --destructive-foreground: 0 0% 0%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --input: var(--gray3);
+    --border: var(--gray6);
+    --ring: var(--gray8);
   }
 }
 
 @layer base {
-  :where(*, *::before, *::after) {
+  *, *::before, *::after {
     @apply border-border;
   }
   body {

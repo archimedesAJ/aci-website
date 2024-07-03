@@ -8,27 +8,38 @@ const buttonVariants = cva(
 	{
 		variants: {
 			variant: {
-				default:
+				monochrome:
+					"bg-monochrome text-monochrome-foreground shadow hover:bg-monochrome/90",
+				primary:
 					"bg-primary text-primary-foreground shadow hover:bg-primary/90",
+				secondary:
+					"bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+				tertiary:
+					"bg-tertiary text-tertiary-foreground shadow-sm hover:bg-tertiary/80",
+				accent: "bg-accent text-accent-foreground shadow-sm hover:bg-accent/80",
 				destructive:
 					"bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
 				outline:
-					"border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
-				secondary:
-					"bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+					"border bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
 				ghost: "hover:bg-accent hover:text-accent-foreground",
 				link: "text-primary underline-offset-4 hover:underline",
 			},
 			size: {
-				default: "h-9 px-4 py-2",
-				sm: "h-8 rounded-md px-3 text-xs",
-				lg: "h-10 rounded-md px-8",
-				icon: "size-9",
+				lg: "h-10 rounded-lg px-8",
+				md: "h-9 rounded-md px-4 py-2",
+				sm: "h-8 rounded-sm px-3 text-xs",
+				icon: "size-10",
+			},
+			fullWidth: {
+				true: "w-full",
+			},
+			rounded: {
+				true: "rounded-full",
 			},
 		},
 		defaultVariants: {
-			variant: "default",
-			size: "default",
+			variant: "primary",
+			size: "lg",
 		},
 	},
 );
@@ -40,11 +51,16 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-	({ className, variant, size, asChild = false, ...props }, ref) => {
+	(
+		{ className, variant, size, rounded, fullWidth, asChild = false, ...props },
+		ref,
+	) => {
 		const Comp = asChild ? Slot : "button";
 		return (
 			<Comp
-				className={cn(buttonVariants({ variant, size, className }))}
+				className={cn(
+					buttonVariants({ variant, size, rounded, fullWidth, className }),
+				)}
 				ref={ref}
 				{...props}
 			/>
