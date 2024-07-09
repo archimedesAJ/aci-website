@@ -19,7 +19,7 @@ export default function GlobalError({ reset }: { reset: () => void }) {
 						<div className="grid place-items-center gap-2">
 							<h2 className="text-balance">Something went wrong!</h2>
 						</div>
-						<Button size={"lg"} className="group" onClick={() => reset()}>
+						<Button className="group" onClick={() => reset()}>
 							<ReloadIcon className="group-hover:repeat-1 size-4 group-hover:animate-spin group-hover:duration-700 group-hover:group-hover:ease-in-out" />
 							<span>Refresh</span>
 						</Button>

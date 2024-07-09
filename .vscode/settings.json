@@ -6,5 +6,10 @@
 	"editor.codeActionsOnSave": {
 		"source.organizeImports.biome": "always",
 		"quickfix.biome": "explicit"
+	},
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.expand": false,
+	"explorer.fileNesting.patterns": {
+		"package.json": "*"
 	}
 }

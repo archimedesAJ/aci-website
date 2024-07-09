@@ -1,14 +1,5 @@
 import "@/styles/globals.css";
 import { siteConfig } from "@/config/site";
-import {
-	openGraphImages,
-	openGraphLocale,
-	openGraphName,
-	openGraphType,
-	twitterCard,
-	twitterCreator,
-	twitterImages,
-} from "@/lib/shared-metadata";
 import { cn } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import { fontSans } from "./fonts";
@@ -21,28 +12,23 @@ export const metadata: Metadata = {
 		default: siteConfig.name,
 	},
 	description: siteConfig.description,
-	keywords: ["Next.js", "Tailwind", "Shadcn", "Template"],
-	authors: [
-		{
-			name: siteConfig.name,
-			url: siteConfig.URL,
-		},
+	keywords: [
+		"Action Chapel",
+		"International Church",
+		"Action Chapel International",
+		"Church In Ghana",
+		"Top Churches In Ghana",
 	],
-	openGraph: {
-		...openGraphName,
-		...openGraphImages,
-		...openGraphLocale,
-		...openGraphType,
-		title: siteConfig.name,
-		description: siteConfig.description,
+	robots: {
+		follow: true,
+		index: true,
 	},
 	twitter: {
-		...twitterCard,
-		...twitterCreator,
-		...twitterImages,
-		title: siteConfig.name,
-		description: siteConfig.description,
+		card: "summary_large_image",
+		creator: "@gybex_enock",
+		site: siteConfig.URL,
 	},
+	creator: siteConfig.author.name,
 };
 export const viewport: Viewport = {
 	themeColor: [
