@@ -23,6 +23,7 @@ const buttonVariants = cva(
 					"border bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
 				ghost: "hover:bg-accent hover:text-accent-foreground",
 				link: "text-primary underline-offset-4 hover:underline",
+				plain: "",
 			},
 			size: {
 				lg: "h-11 px-8",

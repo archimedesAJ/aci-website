@@ -1,4 +1,4 @@
-import { Inter as FontSans } from "next/font/google";
+import { Quicksand as FontSans } from "next/font/google";
 
 export const fontSans = FontSans({
 	subsets: ["latin"],

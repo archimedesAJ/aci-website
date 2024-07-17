@@ -1,9 +1,13 @@
 import "@/styles/globals.css";
+import ScrollToTop from "@/components/common/scroll-to-top";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import { fontSans } from "./fonts";
+import Footer from "./footer";
+import Header from "./header";
 import Providers from "./providers";
+import TopHeader from "./top-header";
 
 export const metadata: Metadata = {
 	metadataBase: new URL(siteConfig.URL),
@@ -43,9 +47,21 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" suppressHydrationWarning className={cn(fontSans.variable)}>
+		<html
+			lang="en"
+			suppressHydrationWarning
+			className={cn("scroll-smooth", fontSans.variable)}
+		>
 			<body>
-				<Providers>{children}</Providers>
+				<Providers>
+					<div className="relative grid min-h-dvh grid-rows-[auto_auto_1fr_auto]">
+						<TopHeader />
+						<Header />
+						{children}
+						<Footer />
+					</div>
+					<ScrollToTop />
+				</Providers>
 			</body>
 		</html>
 	);
