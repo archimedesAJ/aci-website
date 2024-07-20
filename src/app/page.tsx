@@ -37,7 +37,7 @@ export default function Page() {
 	return (
 		<section className="space-y-10 py-10 md:space-y-16 md:py-12">
 			{/* hero section */}
-			<div className="flex min-h-[35dvh] flex-col gap-y-8">
+			<div className="flex min-h-[33dvh] flex-col gap-y-8">
 				<div className="container mt-auto flex flex-col items-center justify-center gap-y-4">
 					<p className="text-center text-xl">
 						Kwabenya - Opposite Hairport Salon
@@ -57,11 +57,23 @@ export default function Page() {
 					Bishop Charles T.Tetteh Podcast
 				</h2>
 
-				<Spotify
-					wide
-					height={252}
-					link="https://open.spotify.com/show/7ampdJe1I2Xeetb4rSlKpQ?si=14967519256e48e5"
-				/>
+				<div className="space-y-2">
+					<Spotify
+						wide
+						height={252}
+						link="https://open.spotify.com/episode/0P1gQtM2ArfjpfkgKohFOl"
+					/>
+					<Spotify
+						wide
+						height={252}
+						link="https://open.spotify.com/episode/6V6txoaqpvBgMcAdc8hmZ7"
+					/>
+					<Spotify
+						wide
+						height={252}
+						link="https://open.spotify.com/episode/1b0Y3rMd5bBpKdng0U1XpQ"
+					/>
+				</div>
 			</div>
 
 			{/* image links */}

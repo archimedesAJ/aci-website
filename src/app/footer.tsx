@@ -25,10 +25,10 @@ export default function Footer() {
 	return (
 		<footer
 			ref={ref}
-			className="space-y-10 bg-secondary/95 py-8 text-secondary-foreground md:space-y-12 md:pt-16"
+			className="space-y-10 bg-secondary/95 py-10 text-secondary-foreground md:space-y-12 md:pt-16"
 		>
 			{/* top section */}
-			<div className="container flex flex-col gap-x-4 gap-y-10 md:flex-row md:justify-around md:gap-x-8">
+			<div className="container flex flex-wrap gap-10">
 				{/* weekly activities */}
 				<div className="space-y-4">
 					<p className="font-bold">WEEKLY ACTIVITIES</p>
