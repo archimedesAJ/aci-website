@@ -3,8 +3,8 @@ import {
 	ChurchIcon,
 	HouseIcon,
 	MailOpenIcon,
-	MapPinIcon,
 	NotepadTextIcon,
+	UsersIcon,
 } from "lucide-react";
 
 export const routes = [
@@ -19,9 +19,9 @@ export const routes = [
 		icon: ChurchIcon,
 	},
 	{
-		title: "Locations",
-		href: "/locations",
-		icon: MapPinIcon,
+		title: "Departments",
+		href: "/departments",
+		icon: UsersIcon,
 	},
 	{
 		title: "Prayer Request and Praise Report",

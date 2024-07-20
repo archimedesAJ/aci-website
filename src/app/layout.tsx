@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import ScrollToTop from "@/components/common/scroll-to-top";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
@@ -60,7 +59,6 @@ export default function RootLayout({
 						{children}
 						<Footer />
 					</div>
-					<ScrollToTop />
 				</Providers>
 			</body>
 		</html>

@@ -34,12 +34,15 @@ const imageLinks = [
 
 export default function Page() {
 	return (
-		<section>
+		<section className="py-12">
 			{/* hero section */}
-			<div className="flex min-h-[65dvh] flex-col py-8 pb-0">
-				<div className="container mt-auto flex flex-col items-center justify-center gap-y-4 md:gap-y-8">
+			<div className="flex min-h-[65dvh] flex-col gap-y-8">
+				<div className="container mt-auto flex flex-col items-center justify-center gap-y-4">
+					<p className="text-center text-xl">
+						Kwabenya - Opposite Hairport Salon
+					</p>
 					<h1 className="text-balance text-center">
-						Action Chapel International
+						Action Chapel International - Praise Cathedral
 					</h1>
 					<p className="text-center text-2xl">
 						One Church in many Locations Worldwide

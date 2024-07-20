@@ -13,11 +13,11 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from "@/components/ui/sheet";
-import { XIcon } from "lucide-react";
+import { MenuIcon, XIcon } from "lucide-react";
 
 export default function Header() {
 	return (
-		<header className="sticky top-0 z-10 bg-secondary/95 text-secondary-foreground backdrop-blur">
+		<header className="sticky top-0 z-10 bg-secondary/95 text-secondary-foreground shadow-[0_4px_8px_rgb(0_0_0_/_.2)] backdrop-blur">
 			<div className="container flex items-center gap-x-4 py-px max-lg:justify-between md:gap-x-20">
 				{/* logo */}
 				<Link
@@ -50,8 +50,8 @@ export default function Header() {
 				{/* mobile nav */}
 				<Sheet>
 					<SheetTrigger asChild>
-						<Button size={"sm"} rounded className="lg:hidden">
-							Menu
+						<Button size={"icon"} className="size-9 lg:hidden">
+							<MenuIcon className="size-6" />
 						</Button>
 					</SheetTrigger>
 					<SheetContent
