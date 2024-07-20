@@ -52,32 +52,29 @@ export default function Page() {
 				<ScrollToBottom />
 			</div>
 			{/* podcast */}
-			<div className="container space-y-8">
+			<div className="space-y-8">
 				<h2 className="after:-bottom-1 relative mx-auto w-fit text-balance text-center after:absolute after:inset-x-0 after:mx-auto after:h-[3px] after:w-3/4 after:rounded-full after:bg-gradient-to-r after:from-primary after:to-secondary after:content-['']">
 					Bishop Charles T.Tetteh Podcast
 				</h2>
 
-				<div className="space-y-2">
+				<div className="grid gap-4 px-4 md:grid-cols-2 lg:grid-cols-3">
 					<Spotify
-						wide
-						height={252}
+						className="aspect-video w-full"
 						link="https://open.spotify.com/episode/0P1gQtM2ArfjpfkgKohFOl"
 					/>
 					<Spotify
-						wide
-						height={252}
+						className="aspect-video w-full"
 						link="https://open.spotify.com/episode/6V6txoaqpvBgMcAdc8hmZ7"
 					/>
 					<Spotify
-						wide
-						height={252}
+						className="aspect-video w-full"
 						link="https://open.spotify.com/episode/1b0Y3rMd5bBpKdng0U1XpQ"
 					/>
 				</div>
 			</div>
 
 			{/* image links */}
-			<ul className="grid grid-cols-[repeat(auto-fit,_minmax(min(300px,_100%),_1fr))] gap-4 px-4">
+			<ul className="grid grid-cols-[repeat(auto-fit,_minmax(min(250px,_100%),_1fr))] gap-4 px-4">
 				{imageLinks.map((imageLink) => (
 					<li key={imageLink.src} className="aspect-square w-full">
 						<Link
