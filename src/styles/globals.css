@@ -52,7 +52,7 @@
     --destructive: 358 69% 55%;
     --destructive-foreground: 0 0% 0%;
 
-    --input: var(--gray3);
+    --input: var(--gray5);
     --border: var(--gray6);
     --ring: var(--gray8);
   }
@@ -93,7 +93,7 @@
     --destructive: 360 79% 65%;
     --destructive-foreground: 0 0% 0%;
 
-    --input: var(--gray3);
+    --input: var(--gray5);
     --border: var(--gray6);
     --ring: var(--gray8);
   }
