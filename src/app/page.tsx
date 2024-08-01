@@ -51,6 +51,33 @@ export default function Page() {
 				</div>
 				<ScrollToBottom />
 			</div>
+
+			{/* banner */}
+			<div className="container flex flex-col gap-4 md:flex-row md:items-center md:justify-center md:gap-8">
+				<div className="size-fit rounded-full border-[15px] border-secondary max-xl:aspect-square max-xl:h-auto max-xl:w-full xl:size-[25rem] xl:border-[20px]">
+					<div className="relative size-full overflow-hidden rounded-full">
+						<Image
+							src={"/profile.jpeg"}
+							sizes="500px"
+							fill
+							alt={"Bishop Charles T.Tetteh"}
+							className="max-w-full truncate object-contain italic"
+						/>
+					</div>
+				</div>
+				<div className="max-w-[25rem] space-y-4 xl:max-w-[34.375rem]">
+					<h2>Welcome to Action Chapel International (Praise Cathedral)</h2>
+					<p>
+						Action Chapel International (Praise Cathedral) was established on
+						the ...... Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Harum aspernatur dolore id tempora quia aliquam maiores sit, est
+						aliquid consequuntur, provident doloremque ad possimus quidem error
+						et minima voluptas tempore quisquam neque nulla tenetur explicabo
+						ratione commodi. Consectetur tempore non soluta qui distinctio.
+					</p>
+				</div>
+			</div>
+
 			{/* podcast */}
 			<div className="space-y-8">
 				<h2 className="after:-bottom-1 relative mx-auto w-fit text-balance text-center after:absolute after:inset-x-0 after:mx-auto after:h-[3px] after:w-3/4 after:rounded-full after:bg-gradient-to-r after:from-primary after:to-secondary after:content-['']">
