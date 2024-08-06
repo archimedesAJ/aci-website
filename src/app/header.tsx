@@ -10,6 +10,7 @@ import {
 	SheetContent,
 	SheetDescription,
 	SheetHeader,
+	SheetOverlay,
 	SheetTitle,
 	SheetTrigger,
 } from "@/components/ui/sheet";
@@ -54,6 +55,7 @@ export default function Header() {
 							<MenuIcon className="size-6" />
 						</Button>
 					</SheetTrigger>
+					<SheetOverlay className="bg-transparent" />
 					<SheetContent
 						side={"left"}
 						className="bg-secondary text-secondary-foreground"
