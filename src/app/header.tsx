@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { routes } from "@/config/nav";
 import Image from "next/image";
@@ -14,9 +16,13 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
 import { MenuIcon, XIcon } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+	const pathname = usePathname();
+
 	return (
 		<header className="sticky top-0 z-10 bg-secondary/95 text-secondary-foreground shadow-[0_4px_8px_rgb(0_0_0_/_.2)] backdrop-blur">
 			<div className="container flex items-center gap-x-4 py-px max-lg:justify-between md:gap-x-20">
@@ -40,7 +46,10 @@ export default function Header() {
 						<li key={x.title}>
 							<Link
 								href={x.href}
-								className="flex items-center gap-x-1 text-xs uppercase transition-colors duration-150 ease-linear hover:text-primary 2xl:text-sm"
+								className={cn(
+									"flex items-center gap-x-1 text-xs uppercase transition-colors duration-150 ease-linear hover:text-primary 2xl:text-sm",
+									pathname === x.href && "text-primary hover:text-primary/90",
+								)}
 							>
 								<x.icon className="size-3 2xl:size-4" />
 								<span>{x.title}</span>
@@ -109,7 +118,11 @@ export default function Header() {
 											<Button asChild variant={"plain"} className="h-fit p-0">
 												<Link
 													href={x.href}
-													className="flex items-center gap-x-1 text-xs uppercase transition-colors duration-150 ease-linear hover:text-primary 2xl:text-sm"
+													className={cn(
+														"flex items-center gap-x-1 text-xs uppercase transition-colors duration-150 ease-linear hover:text-primary 2xl:text-sm",
+														pathname === x.href &&
+															"text-primary hover:text-primary/90",
+													)}
 												>
 													<x.icon className="size-3 2xl:size-4" />
 													<span>{x.title}</span>
