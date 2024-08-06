@@ -12,23 +12,23 @@ export const metadata: Metadata = {
 
 const imageLinks = [
 	{
-		src: "/upcoming-events.jpg",
+		src: "/upcoming-events.webp",
 		alt: "Upcoming events",
 	},
 	{
-		src: "/im-new.jpg",
+		src: "/im-new.webp",
 		alt: "I am new",
 	},
 	{
-		src: "/get-involved.jpg",
+		src: "/get-involved.webp",
 		alt: "Get involved",
 	},
 	{
-		src: "/get-connected.jpg",
+		src: "/get-connected.webp",
 		alt: "Get connected",
 	},
 	{
-		src: "/prayer-request.jpg",
+		src: "/prayer-request.webp",
 		alt: "Prayer request",
 	},
 ];
@@ -44,7 +44,7 @@ export default function Page() {
                   hsl(0 0% 0% / 0.8),
                   hsl(0 0% 0% / 0.8)
                 ),
-                url("/hero.jpg")`,
+                url("/hero.webp")`,
 				}}
 			>
 				<div className="flex flex-col gap-y-6 py-6 max-xl:py-12 xl:min-h-[40.625rem]">
@@ -70,7 +70,7 @@ export default function Page() {
 						<div className="size-fit max-w-[25rem] max-xl:aspect-square max-xl:h-auto max-xl:w-full xl:size-[25rem]">
 							<div className="relative size-full overflow-hidden rounded-full">
 								<Image
-									src={"/profile.jpeg"}
+									src={"/profile.webp"}
 									sizes="500px"
 									fill
 									alt={"Bishop Charles T.Tetteh"}

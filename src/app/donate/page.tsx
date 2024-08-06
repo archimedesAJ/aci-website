@@ -17,7 +17,7 @@ export default function DonatePage() {
 				{/* momo */}
 				<div className="relative h-24 xs:h-[15rem] w-full overflow-hidden rounded-lg drop-shadow-lg">
 					<Image
-						src="/momo.jpg"
+						src="/momo.webp"
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						fill
 						alt="Momo"
@@ -28,7 +28,7 @@ export default function DonatePage() {
 					{/* fidelity */}
 					<div className="relative h-[15rem] w-[min(21.25rem,100%)] overflow-hidden rounded-lg drop-shadow-lg">
 						<Image
-							src="/fidelity.jpg"
+							src="/fidelity.webp"
 							sizes="400px"
 							fill
 							alt="Fidelity"
@@ -38,7 +38,7 @@ export default function DonatePage() {
 					{/* zenith */}
 					<div className="relative h-[15rem] w-[min(21.25rem,100%)] overflow-hidden rounded-lg drop-shadow-lg">
 						<Image
-							src="/zenith.jpg"
+							src="/zenith.webp"
 							sizes="400px"
 							fill
 							alt="Zenith"
@@ -48,7 +48,7 @@ export default function DonatePage() {
 					{/* ecobank */}
 					<div className="relative h-[15rem] w-[min(21.25rem,100%)] overflow-hidden rounded-lg drop-shadow-lg">
 						<Image
-							src="/ecobank.jpg"
+							src="/ecobank.webp"
 							sizes="400px"
 							fill
 							alt="Ecobank"

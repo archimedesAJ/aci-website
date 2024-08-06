@@ -26,7 +26,7 @@ export default function Header() {
 					className="relative inline-block size-16 overflow-hidden rounded-md md:size-20"
 				>
 					<Image
-						src={"/aci-logo.png"}
+						src={"/aci-logo.webp"}
 						alt={"Action Chapel International"}
 						className="max-w-full truncate object-cover object-center italic"
 						fill
@@ -79,7 +79,7 @@ export default function Header() {
 											className="relative block size-16 overflow-hidden rounded-md md:size-20"
 										>
 											<Image
-												src={"/aci-logo.png"}
+												src={"/aci-logo.webp"}
 												alt={"Action Chapel International"}
 												className="max-w-full truncate object-cover object-center italic"
 												fill
