@@ -67,16 +67,21 @@ export default function Page() {
 				{/* banner */}
 				<div className="bg-gray-3 py-10 before:absolute md:py-16">
 					<div className="container flex flex-col gap-4 md:flex-row md:items-center md:justify-center md:gap-8">
-						<div className="size-fit max-w-[25rem] max-xl:aspect-square max-xl:h-auto max-xl:w-full xl:size-[25rem]">
-							<div className="relative size-full overflow-hidden rounded-full">
-								<Image
-									src={"/profile.webp"}
-									sizes="500px"
-									fill
-									alt={"Bishop Charles T.Tetteh"}
-									className="max-w-full truncate object-contain italic"
-								/>
+						<div className="space-y-2 md:space-y-4">
+							<div className="size-fit max-w-[25rem] max-xl:aspect-square max-xl:h-auto max-xl:w-full xl:size-[25rem]">
+								<div className="relative size-full overflow-hidden rounded-full">
+									<Image
+										src={"/profile.webp"}
+										sizes="500px"
+										fill
+										alt={"Bishop Charles T.Tetteh"}
+										className="max-w-full truncate object-contain italic"
+									/>
+								</div>
 							</div>
+							<p className="text-center font-medium text-xl italic md:text-3xl">
+								Bishop Charles Tetteh
+							</p>
 						</div>
 						<div className="max-w-[25rem] space-y-4 text-lg xl:max-w-[34.375rem]">
 							<h2>Welcome to Action Chapel International (Praise Cathedral)</h2>
