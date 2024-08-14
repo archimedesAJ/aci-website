@@ -10,7 +10,7 @@ export default function DonatePage() {
 	return (
 		<div className="container space-y-4 py-12 md:space-y-8 md:py-24">
 			{/* heading */}
-			<h1 className="text-balance text-center">THANK YOU FOR YOUR SUPPORT!</h1>
+			<h1 className="text-balance text-center">Thank You For Your Support!</h1>
 
 			{/* giving platforms */}
 			<div className="space-y-4 md:space-y-8">

@@ -12,7 +12,7 @@ export default function ContactPage() {
 		<div className="container space-y-8 py-12 md:space-y-16 md:py-24">
 			{/* info */}
 			<div className="space-y-3 text-center md:space-y-6">
-				<h1>GET IN TOUCH</h1>
+				<h1>Get In Touch</h1>
 				<div>
 					<p className="font-semibold">Action Chapel International</p>
 					<p className="font-semibold">Praise Cathedral</p>
