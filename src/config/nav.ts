@@ -13,11 +13,11 @@ export const routes = [
 		href: "/",
 		icon: HouseIcon,
 	},
-	{
-		title: "About Us",
-		href: "/about",
-		icon: ChurchIcon,
-	},
+	// {
+	// 	title: "About Us",
+	// 	href: "/about",
+	// 	icon: ChurchIcon,
+	// },
 	{
 		title: "Departments",
 		href: "/departments",
