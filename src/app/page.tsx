@@ -80,19 +80,17 @@ export default function Page() {
 								</div>
 							</div>
 							<p className="text-center font-medium text-xl italic md:text-3xl">
-								Bishop Charles Tetteh
+								Bishop Charles T. Tetteh
 							</p>
 						</div>
 						<div className="max-w-[25rem] space-y-4 text-lg xl:max-w-[34.375rem]">
 							<h2>Welcome to Action Chapel International (Praise Cathedral)</h2>
 							<p>
-								Action Chapel International (Praise Cathedral) was established
-								on the ...... Lorem ipsum dolor sit, amet consectetur
-								adipisicing elit. Harum aspernatur dolore id tempora quia
-								aliquam maiores sit, est aliquid consequuntur, provident
-								doloremque ad possimus quidem error et minima voluptas tempore
-								quisquam neque nulla tenetur explicabo ratione commodi.
-								Consectetur tempore non soluta qui distinctio.
+								Known in many parts of the world as the Apostle of Strategic
+								Prayer, Archbishop Duncan-Williams is the Founder and Overseer
+								of Action Chapel International. ACI brings revivals to
+								international cities through the power of corporate,
+								intercessory and prophetic prayer.
 							</p>
 						</div>
 					</div>
