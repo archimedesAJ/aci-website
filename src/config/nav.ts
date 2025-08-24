@@ -14,8 +14,8 @@ export const routes = [
 		icon: HouseIcon,
 	},
 	{
-		title: "About Us",
-		href: "/about",
+		title: "Gallery",
+		href: "/gallery",
 		icon: ChurchIcon,
 	},
 	{
